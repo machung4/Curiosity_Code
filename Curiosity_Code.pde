@@ -1,24 +1,31 @@
+PImage ShyGuy;
+PImage Setting;
+PImage Bomb;
+
 void setup() {
+
+String url1 = "https://www.mariowiki.com/images/archive/5/5c/20090905200457%21ShyGuyMSS.PNG";
+String url2 = "https://i.pinimg.com/originals/6c/50/59/6c5059b41d18a6bf960618cc18a8ae13.png";
+String url3 = "https://www.mariowiki.com/images/thumb/9/9e/Bobomb_-_MarioPartyStarRush.png/200px-Bobomb_-_MarioPartyStarRush.png";
+
 size(500,500);
+
+
+ShyGuy = loadImage(url1,"png");
+Setting = loadImage(url2,"png");
+Bomb = loadImage(url3,"png");
 }
 
 void draw() {
-PImage img1;
-PImage img2;
-PImage img3;
 
-img1 = loadImage("https://www.mariowiki.com/images/thumb/8/83/Unknown_Shy_Guy.PNG/200px-Unknown_Shy_Guy.PNG");
-img2 = loadImage("https://i.pinimg.com/originals/6c/50/59/6c5059b41d18a6bf960618cc18a8ae13.png");
-img3 = loadImage("https://www.mariowiki.com/images/thumb/9/9e/Bobomb_-_MarioPartyStarRush.png/200px-Bobomb_-_MarioPartyStarRush.png");
-
-image(img2,0,0,500,500);
-image(img1,0,0,100,100);
-image(img1,400,0,100,100);
-image(img1,0,400,100,100);
-image(img1,400,400,100,100);
-image(img3,200,0,100,100);
-image(img3,0,200,100,100);
-image(img3,400,200,100,100);
-image(img3,200,400,100,100);
+image(Setting,0,0,500,500);
+image(ShyGuy,0,0,100,100);
+image(ShyGuy,400,0,100,100);
+image(ShyGuy,0,400,100,100);
+image(ShyGuy,400,400,100,100);
+image(Bomb,200,0,100,100);
+image(Bomb,0,200,100,100);
+image(Bomb,400,200,100,100);
+image(Bomb,200,400,100,100);
 
 }
